@@ -1,62 +1,93 @@
 *{
 	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins' sans-serif;
 }
+
 :root{
 	--primary-color: black;
 	--secondary-color: #E50914;
 	--third-color:white;
 }
+
 body{
 	background-color:var(--primary-color);
 	color: var(--third-color);
 }
+
 /* Header Part */
-.head{
+.container{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/images/Netflix\ Background.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	padding: 10px 10px;
+}
+
+
+.navbar{
 	padding-top: 1.5em;
 	width: 100%;
 }
 
-.logo{
-	max-width: 12%;
-	margin-right: auto;
-}
-
 .content{
-	margin: 0 4rem;
+	margin: 0 3rem;
 	padding: 0.2rem;
 	display: flex;
 	flex-flow:row nowrap;
 	justify-content: flex-start;
 	align-items: flex-start;
+	height: auto;
+}
+
+.logo{
+	/* display: block; */
+	width: 12%;
+	/* height: fit-content; */
+	margin-right: auto;
 }
 
 .items{
-	font-weight: bold;
+	/* font-weight: bold; */
 	text-align: center;
-	max-width: 10%;
+	/* max-width: 10%; */
 	margin-right: 2rem;
-	padding: 8px 0;
+	margin-left: 1rem;
+	padding: 8px 6px;
 	background: transparent;
 	color:var(--third-color) ;
 	border: 1px solid var(--third-color);
 	border-radius: 4px;
+	display: inline-block;
+    position: relative;
+    width: auto;
+	font-size: 1rem;
 }
 
 .list{
 	text-align: center;
 	background-color: darkgray;
-	padding: 2px 8px;
+	padding: 8px 4px;
+	display: inline-block;
+    position: relative;
+    /* width: auto; */
+	min-height: 1.2rem;
 }
 
 a{
 	text-align: center;
-	max-width: 10%;
+	/* max-width: 10%; */
+	width: auto;
 	border: 1px solid var(--secondary-color);
     color: var(--third-color);
 	background-color: var(--secondary-color);
     text-decoration: none;
 }
+
 .link{
 	border-radius: 4px;
-	padding: 5px 10px;
+	padding: 7px 17px;
 }
