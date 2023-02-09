@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Poppins' sans-serif;
+	font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
 }
 
 :root{
@@ -26,7 +26,7 @@ hr{
 /* Header Part */
 .container{
 	width: 100%;
-	height: 120vh;
+	height: 100vh;
 	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/images/Netflix\ Background.jpg);
 	background-size: cover;
 	background-position: center;
@@ -106,7 +106,7 @@ nav a{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	margin-top: 100px;
+	margin-top: 60px;
 	position: absolute;
 }
 
@@ -140,8 +140,9 @@ nav a{
 .email-signup input{
 	flex: 1;
 	border: 0;
+	outline: none;
 	/* width: 85%; */
-	padding: 20px 10px;
+	padding: 18px 10px;
 	font-size: 20px;
 	border-radius: 4px;
 }
