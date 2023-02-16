@@ -29,7 +29,7 @@ hr{
 
 .container{
 	width: 100%;
-	height: 120vh;
+	height: 110vh;
 	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/Netflix\ Background.jpg);
 	background-size: cover;
 	background-position: center;
@@ -210,6 +210,12 @@ nav a{
 
 /* ---------- Frequently Asked Questions Part ---------- */
 
+ .faq-part .email-signup{
+	max-width: 60%;
+    margin: 0 auto;
+ }
+
+
 .faq-part{
 	width: 80%;
 	text-align: center;
@@ -228,13 +234,8 @@ nav a{
 	margin: 50px auto;
 	max-width: 810px ;
 	width: 100% ;
-
-
 }
 
-input[type= radio]{
-	display: none;	
-}
 
 .accordion .faq-container .faq-questions label{
 	display: flex;
@@ -248,30 +249,39 @@ input[type= radio]{
 
 .accordion .faq-container .faq-questions label h3{
 	font-size: 28px;
-	font-weight: 500;
+	font-weight: 400;
 }
 
-  label::after{
+label::after{
 	content: '+';
 	font-size: 60px;
-	font-weight: 100;
 	position: absolute;
 	right: 30px;
- }
+}
 
- .faq-container .answers{
+input[type= "radio"]{
+	display: none;	
+}
+
+.accordion .answers{
 	background-color: var(--fourth-color);
-	padding: 28px 30px 20px;
+	padding: 0px 30px;
 	margin-bottom: 8px;
-	/* margin: 0 auto; */
+	overflow: hidden;
+	max-height: 0;
+	text-align: left;
  }
-
+ 
  .faq-container .answers p{
 	font-size: 26px;
-	font-weight: 500;
-	text-align: left;
+	font-weight: 400;
 	padding-bottom: 30px;
 	line-height: 34px;
+ }
+ 
+ .accordion input[type="radio"]:checked + label + h3 + .answers{
+	max-height: 700px;
+	padding: 30px 20px;
  }
 
 
