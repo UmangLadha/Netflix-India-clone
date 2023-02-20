@@ -215,6 +215,11 @@ nav a{
     margin: 0 auto;
  }
 
+ .faq-part small{
+	font-size: 20px;
+	margin-bottom: 2rem;
+
+ }
 
 .faq-part{
 	width: 80%;
@@ -237,7 +242,7 @@ nav a{
 }
 
 
-.accordion .faq-container .faq-questions label{
+.accordion .faq-container label{
 	display: flex;
 	align-items: center;
 	padding: 20px 30px ;
@@ -245,18 +250,19 @@ nav a{
 	cursor: pointer;
 	margin-bottom: 2px;
 	position: relative;
-}
-
-.accordion .faq-container .faq-questions label h3{
-	font-size: 28px;
-	font-weight: 400;
+	font-size: 26px;
+	font-weight: 500;
 }
 
 label::after{
 	content: '+';
-	font-size: 60px;
+	font-size: 55px;
+	font-weight: lighter;
 	position: absolute;
-	right: 30px;
+	right: 40px;
+	bottom: -5px;
+	top: -5px;
+	transition: transform .3s;
 }
 
 input[type= "radio"]{
@@ -270,18 +276,24 @@ input[type= "radio"]{
 	overflow: hidden;
 	max-height: 0;
 	text-align: left;
+	transition: max-height .4s, padding .1s;
+
  }
  
  .faq-container .answers p{
 	font-size: 26px;
-	font-weight: 400;
-	padding-bottom: 30px;
+	font-weight: 500;
+	padding-bottom:25px;
 	line-height: 34px;
  }
  
- .accordion input[type="radio"]:checked + label + h3 + .answers{
-	max-height: 700px;
-	padding: 30px 20px;
+ .accordion input[type="radio"]:checked + label + .answers{
+	max-height: 600px;
+	padding: 25px 30px;
+ }
+
+ .accordion input[type="radio"]:checked + label::after{
+	transform: rotate(135deg);
  }
 
 
