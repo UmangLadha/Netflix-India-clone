@@ -312,8 +312,8 @@ input[type="radio"] {
 .footer-part p a{
 	color: var(--fifth-color);
 }
-a:hover{
-	border-bottom: 1px solid var(--fifth-color);
+p a:hover{
+	border-bottom: 2px solid var(--fifth-color);
 }
 
 .footer-part .footer-container{
