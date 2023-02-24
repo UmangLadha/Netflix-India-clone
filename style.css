@@ -3,20 +3,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+	/* font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif; */
 }
 
 :root {
     --primary-color: black;
     --secondary-color: #E50914;
     --third-color: white;
-    --fourth-color: #303030;
+    --fourth-color:rgb(22, 22, 22);
 	--fifth-color:#737373;
 }
 
 body {
     background-color: var(--primary-color);
     color: var(--third-color);
-    margin: 0;
 }
 
 hr {
@@ -30,9 +30,9 @@ hr {
 
 .container {
     width: 100%;
-    height: 110vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/Netflix\ Background.jpg);
-    background-size: cover;
+    height: 95vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/Netflix\ Background.jpg);
+    background-size:cover;
     background-position: center;
     position: relative;
     /* padding: 10px 10px; */
@@ -43,7 +43,10 @@ hr {
 /* Header Part */
 .navbar {
     padding-top: 1.5em;
-    width: 100%;
+	max-width: 85%;
+    min-width: 40%;
+	margin: auto;
+	height: 38vh;
 }
 
 .content {
@@ -52,28 +55,28 @@ hr {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
-    align-items: flex-start;
-    height: auto;
+    /* align-items: flex-start; */
+    /* height: auto; */
 }
 
 .logo {
     display: block;
-    width: 12%;
+    max-width: 14%;
+	min-width: 10%;
     /* height: fit-content; */
     margin-right: auto;
     cursor: pointer;
 }
 
 .items {
-    /* font-weight: bold; */
+    font-weight: bold;
     text-align: center;
     /* max-width: 10%; */
-    margin-right: 2rem;
-    margin-left: 1rem;
-    padding: 8px 6px;
-    background: transparent;
+    margin:0 2rem 0 1rem;
+    padding: 0 30px;
+    background:  transparent;
     color: var(--third-color);
-    border: 1px solid var(--third-color);
+    border:0.5px solid var(--fourth-color);
     border-radius: 4px;
     display: inline-block;
     position: relative;
@@ -83,7 +86,7 @@ hr {
 
 .list {
     text-align: center;
-    background-color: darkgray;
+    background-color: var(--fifth-color);
     padding: 8px 4px;
     display: inline-block;
     position: relative;
@@ -91,36 +94,41 @@ hr {
     min-height: 1.2rem;
 }
 
+.link {
+	font-weight: bold;
+	border-radius: 4px;
+	padding: 2px 13px;
+}
+
 nav a {
     text-align: center;
     /* max-width: 10%; */
-    width: auto;
+    /* width: auto; */
     border: 1px solid var(--secondary-color);
     color: var(--third-color);
     background-color: var(--secondary-color);
     text-decoration: none;
 }
 
-.link {
-    border-radius: 4px;
-    padding: 7px 17px;
-}
 
 /* --------------- Heading Part ----------------- */
 .heading-part {
+	display: block;
+	width: 100%;
+	min-width: 60%;
     text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 60px;
-    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    margin: auto ; 
+    /* position: absolute; */
 }
 
 .heading-part h1 {
-    font-size: 60px;
-    font-weight: 600;
+    font-size: 50px;
+    font-weight: 900;
     line-height: 70px;
-    max-width: 650px;
+    min-width: 60%;
 }
 
 .heading-part h3 {
@@ -131,33 +139,35 @@ nav a {
 
 .heading-part p {
     /* font-weight: 200; */
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .email-signup {
     display: flex;
-    border-radius: 4px;
-    width: 100%;
+	gap: 10px;
+	margin: 20px auto 0 ;
+	width: 38%;
     align-items: center;
-    margin-top: 30px;
     overflow: hidden;
 }
 
 .email-signup input {
     flex: 1;
-    border: 0;
-    outline: none;
-    /* width: 85%; */
-    padding: 18px 10px;
-    font-size: 20px;
+    border:0.5px solid var(--fifth-color);
+    /* outline:0; */
+    min-width: 60%;
+	background-color: rgba(22, 22, 22, 0.8);
+	color: var(--third-color);
+    padding: 14px 16px;
+    font-size: 17px;
     border-radius: 4px;
 }
 
 .email-signup .submit-btn {
     text-align: center;
-    /* width: 45%; */
-    padding: 15px 30px;
-    font-weight: 400;
+    min-width: 25%;
+    padding: 10px 30px;
+    font-weight: 600;
     font-size: 25px;
     border-radius: 4px;
     background-color: var(--secondary-color);
