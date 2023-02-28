@@ -3,15 +3,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
-	/* font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif; */
 }
 
 :root {
     --primary-color: black;
-    --secondary-color: #E50914;
+    --secondary-color: rgba(229, 9, 20, 1);
     --third-color: white;
-    --fourth-color:rgb(22, 22, 22);
-	--fifth-color:#737373;
+    --fourth-color: rgb(22, 22, 22);
+    --fifth-color: #737373;
+	--sixth-color: rgb(45, 45, 45);
+	--seventh-color:rgba(255, 255, 255, 0.7);
 }
 
 body {
@@ -31,39 +32,34 @@ hr {
 .container {
     width: 100%;
     height: 95vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/Netflix\ Background.jpg);
-    background-size:cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/Netflix\ Background.jpg);
+    background-size: cover;
     background-position: center;
     position: relative;
-    /* padding: 10px 10px; */
-    /* border-bottom: 10px solid  rgba(169, 169, 169, 0.347); */
-
 }
 
 /* Header Part */
 .navbar {
     padding-top: 1.5em;
-	max-width: 85%;
-    min-width: 40%;
-	margin: auto;
-	height: 38vh;
+    width: 85%;
+    margin: auto;
 }
 
 .content {
-    margin: 0 3rem;
+    /* margin: 0 3rem; */
     padding: 0.2rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
-    /* align-items: flex-start; */
-    /* height: auto; */
+    align-items: flex-start;
+    height: auto;
+    align-items: center;
 }
 
 .logo {
     display: block;
-    max-width: 14%;
-	min-width: 10%;
-    /* height: fit-content; */
+    width: 12%;
+    height: fit-content;
     margin-right: auto;
     cursor: pointer;
 }
@@ -71,16 +67,14 @@ hr {
 .items {
     font-weight: bold;
     text-align: center;
-    /* max-width: 10%; */
-    margin:0 2rem 0 1rem;
-    padding: 0 30px;
-    background:  transparent;
+    width: 15%;
+    margin-right: 1.8rem;
+    padding: 4px 12px;
+    background-color: var(--primary-color);
+    opacity: 0.7;
     color: var(--third-color);
-    border:0.5px solid var(--fourth-color);
+    border: 0.8px solid var(--fifth-color);
     border-radius: 4px;
-    display: inline-block;
-    position: relative;
-    width: auto;
     font-size: 1rem;
 }
 
@@ -88,16 +82,17 @@ hr {
     text-align: center;
     background-color: var(--fifth-color);
     padding: 8px 4px;
-    display: inline-block;
-    position: relative;
+    /* display: inline-block; */
+    /* position: relative; */
     /* width: auto; */
     min-height: 1.2rem;
 }
 
 .link {
-	font-weight: bold;
-	border-radius: 4px;
-	padding: 2px 13px;
+    font-weight: 500;
+    /* font-size: large; */
+    border-radius: 4px;
+    padding: 3px 16px;
 }
 
 nav a {
@@ -113,15 +108,16 @@ nav a {
 
 /* --------------- Heading Part ----------------- */
 .heading-part {
-	display: block;
-	width: 100%;
-	min-width: 60%;
+    /* display: inline-block; */
+    width: 100%;
+    /* min-width: 60%; */
     text-align: center;
-    /* top: 50%;
-    left: 50%; */
-    /* transform: translate(-50%, -50%); */
-    margin: auto ; 
-    /* position: absolute; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* margin: auto ;  */
+    position: absolute;
+    padding: 7.5rem 0 2rem;
 }
 
 .heading-part h1 {
@@ -144,20 +140,20 @@ nav a {
 
 .email-signup {
     display: flex;
-	gap: 10px;
-	margin: 20px auto 0 ;
-	width: 38%;
+    gap: 10px;
+    margin: 20px auto 0;
+    width: 38%;
     align-items: center;
     overflow: hidden;
 }
 
 .email-signup input {
-    flex: 1;
-    border:0.5px solid var(--fifth-color);
+    /* flex: 1; */
+    border: 0.5px solid var(--fifth-color);
     /* outline:0; */
     min-width: 60%;
-	background-color: rgba(22, 22, 22, 0.8);
-	color: var(--third-color);
+    background-color: rgba(22, 22, 22, 0.8);
+    color: var(--third-color);
     padding: 14px 16px;
     font-size: 17px;
     border-radius: 4px;
@@ -189,12 +185,11 @@ nav a {
     justify-content: space-between;
     padding: 50px 0px;
     flex-wrap: wrap;
-    width: 75%;
+    width: 80%;
 }
 
 .section-content {
     flex-basis: 50%;
-    padding-right: 3rem;
     margin-bottom: 20px;
 }
 
@@ -211,13 +206,13 @@ nav a {
 
 .cards h1 {
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 800;
     margin-bottom: 1.5rem;
 }
 
 .cards p {
-    font-size: 1.7rem;
-    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 /* ---------- Frequently Asked Questions Part ---------- */
@@ -226,27 +221,24 @@ nav a {
     width: 80%;
     text-align: center;
     padding: 50px 0;
-    min-width: 40%;
     margin: 0 auto;
 }
 
 .faq-title h1 {
     font-size: 3.2em;
-    font-weight: 500
+    font-weight: 900;
 }
 
 .accordion {
-    /* background-color: var(--fourth-color) ; */
     margin: 50px auto;
-    max-width: 810px;
     width: 100%;
 }
 
 .accordion .faq-container label {
     display: flex;
     align-items: center;
-    padding: 20px 30px;
-    background-color: var(--fourth-color);
+    padding: 25px 30px;
+    background-color: var(--sixth-color);
     cursor: pointer;
     margin-bottom: 2px;
     position: relative;
@@ -260,8 +252,8 @@ label::after {
     font-weight: lighter;
     position: absolute;
     right: 40px;
-    bottom: -5px;
-    top: -5px;
+    bottom: -4px;
+    top: -4px;
     transition: transform .6s;
 }
 
@@ -270,7 +262,7 @@ input[type="radio"] {
 }
 
 .accordion .answers {
-    background-color: var(--fourth-color);
+    background-color:var(--sixth-color);
     padding: 0px 30px;
     margin-bottom: 8px;
     overflow: hidden;
@@ -295,61 +287,90 @@ input[type="radio"] {
     transform: rotate(135deg);
 }
 
-.faq-part .one-line{
-    font-size: 20px;
+.faq-part .one-line {
+    font-size: 22px;
+	text-align: center;
 }
 
 .faq-part .email-signup {
-    max-width: 60%;
+	text-align: center;
+    width: 55%;
     margin: 20px auto;
 }
 
 /* -------------- Footer Part -------------- */
 
-.footer-part{
-	width: 100%;
-	max-width: 95%;
-	margin: 10px auto;
-	padding: 50px 18% 8px;
-	color: var(--fifth-color);
+.footer-part {
+    width: 80%;
+    margin: auto;
+	padding: 3.75rem 0;
+    color: var(--seventh-color);
 }
 
-.footer-part p{
-	font-size: 18px;
-	font-weight: 500;
-	margin-bottom: 30px;
-}
-.footer-part p a{
-	color: var(--fifth-color);
-}
-p a:hover{
-	border-bottom: 2px solid var(--fifth-color);
+.footer-part h4 {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 30px;
 }
 
-.footer-part .footer-container{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
+.footer-part h4 a {
+    color: var(--seventh-color);
 }
 
-.footer-part .col{
-	flex-basis: 25%;
-	flex-grow: 1;
-	margin-bottom: 20px;
+.footer-part .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
-.footer-part .col a{
-	font-size: 12px;
-	font-weight: 500;
-	color: var(--fifth-color);
+.footer-part .col {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer-part .col a {
+    font-size: 14px;
+    font-weight: 500;
+    color:var(--seventh-color);
+    display: block;
+    margin-bottom: 14px;
+}
+
+.footer-part .items {
+    margin: 10px 0 20px;
 	display: block;
-	margin-bottom: 15px;
 }
 
-.footer-part .items{
-	margin: 20px 0;
-}
-.footer-part .col p{
-	font-size: 12px;
-	font-weight: 500;
+
+@media only screen and (max-width: 600px) {
+
+    .logo {
+        width: 30%;
+    }
+
+    .heading-part {
+		width: 80%;
+    }
+
+    .heading-part h1 {
+        font-size: 35px;
+		font-weight: 700;
+        line-height: 40px;
+    }
+
+    .heading-part h3 {
+        font-size: 18px;
+    }
+
+	.heading-part p{
+		font-size: 20px;
+	}
+
+	.email-signup input{
+		width: 100%;
+		margin: 0;
+	}
+
+
 }
