@@ -331,7 +331,7 @@ input[type="radio"] {
 
 .footer-part .col a {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 300;
     color:var(--seventh-color);
     display: block;
     margin-bottom: 14px;
@@ -342,15 +342,31 @@ input[type="radio"] {
 	display: block;
 }
 
-
+/* --------Media Queries for Small Screen--------- */
 @media only screen and (max-width: 600px) {
+/* ---Image Part----- */
+	.container{
+		height: 85vh ;
+	}
+	
+/* ---Navbar Part----- */
+	.logo {
+		width: 32%;
+	}
 
-    .logo {
-        width: 30%;
-    }
+	.navbar .items{
+		width: 100px;
+		margin-right: 8px;
+		padding: 2px 4px;
+	}
 
+	.navbar .link{
+		padding: 3px 10px;
+	}
+
+/* ---Main Heading-Part----- */
     .heading-part {
-		width: 80%;
+		width: 85%;
     }
 
     .heading-part h1 {
@@ -360,17 +376,52 @@ input[type="radio"] {
     }
 
     .heading-part h3 {
-        font-size: 18px;
+        font-size: 20px;
     }
 
 	.heading-part p{
 		font-size: 20px;
 	}
 
+/* ---Login Form-Part----- */
+	.email-signup{
+		display: block;
+		width: 100%;
+	}
+
 	.email-signup input{
 		width: 100%;
-		margin: 0;
+		margin-bottom: 20px;
 	}
+
+	.email-signup .submit-btn{
+		font-size: 20px;
+	}
+/* ---Cards-Part----- */
+    .cards{
+		padding: 0;
+	}
+
+	.section{
+		display: block;
+		width: 90%;
+		text-align: center;
+	}
+
+	.section-content h1{
+		font-size: 32px;
+		font-weight: 700;
+	}
+	.section-content p{
+		font-size: 18px;
+	}
+
+	/* -----FAQ PART----- */
+	.faq-title{
+		font-size: 10px;
+	}
+
+
 
 
 }
