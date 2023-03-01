@@ -171,7 +171,7 @@ nav a {
     border: none;
 }
 
-/*--------------Netflix cards----------------*/
+/*--------------Netflix Features cards----------------*/
 
 .cards {
     width: 100%;
@@ -220,11 +220,11 @@ nav a {
 .faq-part {
     width: 80%;
     text-align: center;
-    padding: 50px 0;
+    padding: 45px 0;
     margin: 0 auto;
 }
 
-.faq-title h1 {
+.faq-title h1{
     font-size: 3.2em;
     font-weight: 900;
 }
@@ -308,7 +308,7 @@ input[type="radio"] {
 }
 
 .footer-part h4 {
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 500;
     margin-bottom: 30px;
 }
@@ -323,23 +323,24 @@ input[type="radio"] {
     justify-content: flex-start;
 }
 
-.footer-part .col {
+.footer-part .row {
     flex-basis: 25%;
     flex-grow: 1;
     margin-bottom: 20px;
 }
 
-.footer-part .col a {
+.footer-part .row a {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 500;
     color:var(--seventh-color);
     display: block;
     margin-bottom: 14px;
 }
 
-.footer-part .items {
+.footer-part .items{
     margin: 10px 0 20px;
 	display: block;
+	width: auto;
 }
 
 /* --------Media Queries for Small Screen--------- */
@@ -394,10 +395,14 @@ input[type="radio"] {
 		margin-bottom: 20px;
 	}
 
+	.faq-part .submit-btn,
 	.email-signup .submit-btn{
 		font-size: 20px;
+		font-weight: 700;
+		padding: 10px 20px;
 	}
-/* ---Cards-Part----- */
+
+/* ---Netflix Features Cards-Part----- */
     .cards{
 		padding: 0;
 	}
@@ -417,11 +422,51 @@ input[type="radio"] {
 	}
 
 	/* -----FAQ PART----- */
+	.faq-part{
+		width: 90%;
+	}
+
 	.faq-title{
 		font-size: 10px;
 	}
 
+	.accordion .faq-container label{
+		font-size: 20px;
+		text-align: left;
+	}
 
+	.accordion .faq-container label::after{
+		font-size: 30px;
+		top: 16px;
+		right: 16px;
+		bottom: 16px;
+	}
 
+	.accordion .faq-container p{
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 24px;
+	}
+
+	.faq-part .one-line{
+		width: 90%;
+		text-align: center;
+		margin: auto;
+		font-size: 20px;
+	}
+
+	.faq-part .email-signup{
+		width: 90%;
+	}
+	
+	/* ------ Footer-Part ------- */
+
+	.footer-part .footer-container {
+		display: block;
+	}
+
+	.footer-container .row{
+		font-weight: 600;
+	}
 
 }
