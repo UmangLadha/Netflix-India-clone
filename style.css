@@ -343,8 +343,12 @@ input[type="radio"] {
 	width: auto;
 }
 
+.message a{
+	color: var(--seventh-color);
+}
+
 /* --------Media Queries for Small Screen--------- */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
 /* ---Image Part----- */
 	.container{
 		height: 85vh ;
@@ -406,7 +410,7 @@ input[type="radio"] {
     .cards{
 		padding: 0;
 	}
-
+	
 	.section{
 		display: block;
 		width: 90%;
